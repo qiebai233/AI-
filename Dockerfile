@@ -10,7 +10,7 @@
 #   # 接真实服务：通过环境变量或 env-file 注入 key（不要烘焙进镜像）
 #   docker run --rm -p 127.0.0.1:8000:8000 --env-file .env deepresearch:0.1.0
 # -----------------------------------------------------------------------------
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 # 容器内行为：不写 .pyc、输出不缓冲（SSE 日志即时刷新）、不缓存 wheel
 ENV PYTHONDONTWRITEBYTECODE=1 \
